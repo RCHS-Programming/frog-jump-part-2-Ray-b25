@@ -62,6 +62,7 @@ public class Frog extends Actor
         //Check for the right key
         if( isRightPress == false && Greenfoot.isKeyDown("right") && getX() < 740)
         {
+            setImage("frog.png");
             setLocation( getX() + 60, getY());
             isRightPress = true;
         }
@@ -76,6 +77,7 @@ public class Frog extends Actor
         //Check for the left key
         if( isLeftPress == false && Greenfoot.isKeyDown("left") && getX() > 60)
         {
+            setImage("frog_left.png");
             setLocation( getX() - 60, getY());
             isLeftPress = true;
         }
